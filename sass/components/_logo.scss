@@ -12,11 +12,16 @@
 }
 
 .header__logo {
-  margin-right: 93px;
+  padding: 15px;
+  // margin-right: 93px;
   color: $logo-color-header;
 }
 
 .footer__logo {
   margin-bottom: 20px;
   color: $logo-color-footer;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }

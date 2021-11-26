@@ -1,0 +1,24 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  display: none;
+  // transform: translateX(100%);
+  // transition: transform $animation-timing $timing-function;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-container.is-open {
+  display: block;
+  // transform: translateX(0);
+}
+
+.mobile-menu {
+  background-color: #fff;
+}

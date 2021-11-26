@@ -17,15 +17,6 @@
     <!--header-->
     <header class="header">
       <div class="container header__container">
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg class="mobile-toggle__icon">
-            <use href="./images/icons.svg#mobile-menu"></use>
-          </svg>
-        </button>
         <nav class="nav">
           <a class="logo header__logo" href="./index.html"
             ><span class="logo__color">Web</span>Studio</a
@@ -62,6 +53,15 @@
             </a>
           </li>
         </ul>
+          <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-toggle__icon">
+            <use href="./images/icons.svg#mobile-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -235,7 +235,8 @@
             <li class="works__item">
               <div class="works__thump">
                 <img
-                  src="./images/box1.jpg"
+                  srcset="./images/box-370.jpg 1x, ./images/box-370@2x.jpg 2x"
+                  src="./images/box-370.jpg"
                   alt="Чем мы занимаемся1"
                   width="370"
                   height="294"
@@ -246,7 +247,8 @@
             <li class="works__item">
               <div class="works__thump">
                 <img
-                  src="./images/box2.jpg"
+                  srcset="./images/box-370-2.jpg 1x, ./images/box-370-2@2x.jpg 2x"
+                  src="./images/box-370-2.jpg"
                   alt="Чем мы занимаемся2"
                   width="370"
                   height="294"
@@ -257,7 +259,8 @@
             <li class="works__item">
               <div class="works__thump">
                 <img
-                  src="./images/box3.jpg"
+                  srcset="./images/box-370-3.jpg 1x, ./images/box-370-3@2x.jpg 2x"
+                  src="./images/box-370-3.jpg"
                   alt="Чем мы занимаемся3"
                   width="370"
                   height="294"
@@ -276,7 +279,8 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/img1.jpg"
+                srcset="./images/team-270.jpg 1x, ./images/team-270@2x.jpg 2x"
+                src="./images/team-270.jpg"
                 alt="Наша команда1"
                 width="270"
                 height="260"
@@ -319,7 +323,8 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/img2.jpg"
+                srcset="./images/team-270-2.jpg 1x, ./images/team-270-2@2x.jpg 2x"
+                src="./images/team-270-2.jpg"
                 alt="Наша команда2"
                 width="270"
                 height="260"
@@ -362,7 +367,8 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/img3.jpg"
+                srcset="./images/team-270-3.jpg 1x, ./images/team-270-3@2x.jpg 2x"
+                src="./images/team-270-3.jpg"
                 alt="Наша команда3"
                 width="270"
                 height="260"
@@ -405,7 +411,8 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/img4.jpg"
+                srcset="./images/team-270-4.jpg 1x, ./images/team-270-4@2x.jpg 2x"
+                src="./images/team-270-4.jpg"
                 alt="Наша команда4"
                 width="270"
                 height="260"
@@ -500,7 +507,7 @@
       </section>
     </main>
     <!--footer-->
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container footer__container">
         <div class="footer-contacts">
           <a class="logo footer__logo" href="./index.html"
