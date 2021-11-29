@@ -13,8 +13,12 @@
 
 .header__logo {
   padding: 15px;
-  // margin-right: 93px;
+  margin-right: 50px;
   color: $logo-color-header;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .footer__logo {

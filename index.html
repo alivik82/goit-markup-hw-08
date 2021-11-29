@@ -75,93 +75,6 @@
             Заказать услугу
           </button>
         </div>
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <form class="modal__form">
-              <h3 class="modal__title">
-                Оставьте свои данные, мы вам перезвоним
-              </h3>
-              <ul class="modal__list">
-                <li class="modal__item">
-                  <label class="modal__field">
-                    <span class="modal__label">Имя</span>
-                    <input
-                      class="modal__input"
-                      type="text"
-                      name="name"
-                      placeholder=" "
-                    />
-                    <svg class="modal__icon">
-                      <use href="./images/icons.svg#person"></use>
-                    </svg>
-                  </label>
-                </li>
-                <li class="modal__item">
-                  <label class="modal__field">
-                    <span class="modal__label">Телефон</span>
-                    <input
-                      class="modal__input"
-                      type="tel"
-                      name="tel"
-                      placeholder=" "
-                    />
-                    <svg class="modal__icon">
-                      <use href="./images/icons.svg#phone"></use>
-                    </svg>
-                  </label>
-                </li>
-                <li class="modal__item">
-                  <label class="modal__field">
-                    <span class="modal__label">Почта</span>
-                    <input
-                      class="modal__input"
-                      type="email"
-                      name="mail"
-                      placeholder=" "
-                    />
-                    <svg class="modal__icon">
-                      <use href="./images/icons.svg#email"></use>
-                    </svg>
-                  </label>
-                </li>
-                <li class="modal__item">
-                  <label class="modal__field">
-                    <span class="modal__label">Комментарий</span>
-                    <textarea
-                      class="modal__textarea"
-                      type="text"
-                      name="comment"
-                      placeholder="Введите текст"
-                    ></textarea>
-                  </label>
-                </li>
-                <li class="modal__item">
-                  <label class="modal-checkbox">
-                    <input
-                      class="modal-checkbox__input"
-                      type="checkbox"
-                      name="checkbox"
-                      value="agree"
-                    />
-                    <span class="modal-checkbox__icon"></span>
-                    <span class="modal-checkbox__text"
-                      >Соглашаюсь с рассылкой и принимаю</span
-                    >
-                    <a class="modal-checkbox__link" href="">Условия договора</a>
-                  </label>
-                </li>
-              </ul>
-              <div class="modal__btn">
-                <button class="button" type="submit">Отправить</button>
-              </div>
-            </form>
-            <button class="modal__button" data-modal-close>
-              <svg class="modal__close">
-                <use href="./images/icons.svg#close"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
       </section>
       <!--description-->
       <section class="section">
@@ -235,8 +148,8 @@
             <li class="works__item">
               <div class="works__thump">
                 <img
-                  srcset="./images/box-370.jpg 1x, ./images/box-370@2x.jpg 2x"
-                  src="./images/box-370.jpg"
+                  srcset="./images/desktop/box-370.jpg 1x, ./images/desktop/box-370.jpg 2x"
+                  src="./images/desktop/box-370.jpg"
                   alt="Чем мы занимаемся1"
                   width="370"
                   height="294"
@@ -247,8 +160,8 @@
             <li class="works__item">
               <div class="works__thump">
                 <img
-                  srcset="./images/box-370-2.jpg 1x, ./images/box-370-2@2x.jpg 2x"
-                  src="./images/box-370-2.jpg"
+                  srcset="./images/desktop/box-370-2.jpg 1x, ./images/desktop/box-370-2@2x.jpg 2x"
+                  src="./images/desktop/box-370-2.jpg"
                   alt="Чем мы занимаемся2"
                   width="370"
                   height="294"
@@ -259,9 +172,9 @@
             <li class="works__item">
               <div class="works__thump">
                 <img
-                  srcset="./images/box-370-3.jpg 1x, ./images/box-370-3@2x.jpg 2x"
-                  src="./images/box-370-3.jpg"
-                  alt="Чем мы занимаемся3"
+                  srcset="./images/desktop/box-370-3.jpg 1x, ./images/desktop/box-370-3@2x.jpg 2x"
+                  src="./images/desktop/box-370-3.jpg"
+                  alt="Чем мы занимаемся2"
                   width="370"
                   height="294"
                 />
@@ -277,14 +190,13 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img
-                class="team__img"
-                srcset="./images/team-270.jpg 1x, ./images/team-270@2x.jpg 2x"
-                src="./images/team-270.jpg"
-                alt="Наша команда1"
-                width="270"
-                height="260"
-              />
+                  <picture>
+                    <source srcset="./images/mobile/team-450.jpg 1x, ./images/mobile/team-450@2x.jpg 2x" media="(max-width: 479px)"/>
+                    <source srcset="./images/tablet/team-354.jpg 1x, ./images/tablet/team-354@2x.jpg 2x" media="(min-width: 480px)"/>
+                    <source srcset="./images/desktop/team-270.jpg 1x, ./images/desktop/team-270@2x.jpg 2x" media="(min-width: 768px)"/>
+                    <img class="team__img" src="./images/tablet/team-354.jpg"
+                    alt="team"/>
+                  </picture>
               <div class="team__thump">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
@@ -321,14 +233,13 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                srcset="./images/team-270-2.jpg 1x, ./images/team-270-2@2x.jpg 2x"
-                src="./images/team-270-2.jpg"
-                alt="Наша команда2"
-                width="270"
-                height="260"
-              />
+                  <picture>
+                    <source srcset="./images/mobile/team-450-2.jpg 1x, ./images/mobile/team-450-2@2x.jpg 2x" media="(max-width: 479px)"/>
+                    <source srcset="./images/tablet/team-354-2.jpg 1x, ./images/tablet/team-354-2@2x.jpg 2x" media="(min-width: 480px)"/>
+                    <source srcset="./images/desktop/team-270-2.jpg 1x, ./images/desktop/team-270-2@2x.jpg 2x" media="(min-width: 768px)"/>
+                    <img class="team__img" src="./images/tablet/team-354-2.jpg"
+                    alt="team"/>
+                  </picture>
               <div class="team__thump">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__text" lang="en">Frontend Developer</p>
@@ -365,14 +276,13 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                srcset="./images/team-270-3.jpg 1x, ./images/team-270-3@2x.jpg 2x"
-                src="./images/team-270-3.jpg"
-                alt="Наша команда3"
-                width="270"
-                height="260"
-              />
+                  <picture>
+                    <source srcset="./images/mobile/team-450-3.jpg 1x, ./images/mobile/team-450-3@2x.jpg 2x" media="(max-width: 479px)"/>
+                    <source srcset="./images/tablet/team-354-3.jpg 1x, ./images/tablet/team-354-3@2x.jpg 2x" media="(min-width: 480px)"/>
+                    <source srcset="./images/desktop/team-270-3.jpg 1x, ./images/desktop/team-270-3@2x.jpg 2x" media="(min-width: 768px)"/>
+                    <img class="team__img" src="./images/tablet/team-354-3.jpg"
+                    alt="team"/>
+                  </picture>
               <div class="team__thump">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__text" lang="en">Marketing</p>
@@ -409,14 +319,13 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                srcset="./images/team-270-4.jpg 1x, ./images/team-270-4@2x.jpg 2x"
-                src="./images/team-270-4.jpg"
-                alt="Наша команда4"
-                width="270"
-                height="260"
-              />
+                  <picture>
+                    <source srcset="./images/mobile/team-450-4.jpg 1x, ./images/mobile/team-450-4@2x.jpg 2x" media="(max-width: 479px)" />
+                    <source srcset="./images/tablet/team-354-4.jpg 1x, ./images/tablet/team-354-4@2x.jpg 2x" media="(min-width: 480px)" />
+                    <source srcset="./images/desktop/team-270-4.jpg 1x, ./images/desktop/team-270-4@2x.jpg 2x" media="(min-width: 768px)" />
+                    <img class="team__img" src="./images/tablet/team-354-4.jpg"
+                    alt="team"/>
+                  </picture>
               <div class="team__thump">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__text" lang="en">UI Designerr</p>
@@ -509,34 +418,35 @@
     <!--footer-->
     <footer class="footer section">
       <div class="container footer__container">
-        <div class="footer-contacts">
-          <a class="logo footer__logo" href="./index.html"
-            ><span class="logo__color">Web</span>Studio</a
-          >
-          <address class="footer-contacts__address" id="contacts">
-            <ul class="footer-contacts__list">
-              <li class="footer-contacts__item">
-                <a
-                  class="footer-contacts__link footer-contacts__link--white"
-                  href="https://goo.gl/maps/BUjDJLent2GHWbhv6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
-              </li>
-              <li class="footer-contacts__item">
-                <a class="footer-contacts__link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
-              </li>
-              <li class="footer-contacts__item">
-                <a class="footer-contacts__link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
-              </li>
-            </ul>
-          </address>
-        </div>
+        <div class="footer__thumb">
+          <div class="footer-contacts">
+            <a class="logo footer__logo" href="./index.html"
+              ><span class="logo__color">Web</span>Studio</a
+            >
+            <address class="footer-contacts__address" id="contacts">
+              <ul class="footer-contacts__list">
+                <li class="footer-contacts__item">
+                  <a
+                    class="footer-contacts__link footer-contacts__link--white"
+                    href="https://goo.gl/maps/BUjDJLent2GHWbhv6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer-contacts__item">
+                  <a class="footer-contacts__link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-contacts__item">
+                  <a class="footer-contacts__link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
         <div class="social">
           <h3 class="social__title">присоединяйтесь</h3>
           <ul class="social__list">
@@ -570,9 +480,10 @@
             </li>
           </ul>
         </div>
+        </div>
         <form class="footer-form">
           <label class="footer-form__label">
-            Подпишитесь на рассылку
+            <span class="footer-form__title">Подпишитесь на рассылку</span> 
             <input
               class="footer-form__input"
               type="email"
@@ -589,6 +500,95 @@
         </form>
       </div>
     </footer>
+    <!-- modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form class="modal__form">
+          <h3 class="modal__title">
+            Оставьте свои данные, мы вам перезвоним
+          </h3>
+          <ul class="modal__list">
+            <li class="modal__item">
+              <label class="modal__field">
+                <span class="modal__label">Имя</span>
+                <input
+                  class="modal__input"
+                  type="text"
+                  name="name"
+                  placeholder=" "
+                />
+                <svg class="modal__icon">
+                  <use href="./images/icons.svg#person"></use>
+                </svg>
+              </label>
+            </li>
+            <li class="modal__item">
+              <label class="modal__field">
+                <span class="modal__label">Телефон</span>
+                <input
+                  class="modal__input"
+                  type="tel"
+                  name="tel"
+                  placeholder=" "
+                />
+                <svg class="modal__icon">
+                  <use href="./images/icons.svg#phone"></use>
+                </svg>
+              </label>
+            </li>
+            <li class="modal__item">
+              <label class="modal__field">
+                <span class="modal__label">Почта</span>
+                <input
+                  class="modal__input"
+                  type="email"
+                  name="mail"
+                  placeholder=" "
+                />
+                <svg class="modal__icon">
+                  <use href="./images/icons.svg#email"></use>
+                </svg>
+              </label>
+            </li>
+            <li class="modal__item">
+              <label class="modal__field">
+                <span class="modal__label">Комментарий</span>
+                <textarea
+                  class="modal__textarea"
+                  type="text"
+                  name="comment"
+                  placeholder="Введите текст"
+                ></textarea>
+              </label>
+            </li>
+            <li class="modal__item">
+              <label class="modal-checkbox">
+                <input
+                  class="modal-checkbox__input"
+                  type="checkbox"
+                  name="checkbox"
+                  value="agree"
+                />
+                <span class="modal-checkbox__icon"></span>
+                <span class="modal-checkbox__text"
+                  >Соглашаюсь с рассылкой и принимаю</span
+                >
+                <a class="modal-checkbox__link" href="">Условия договора</a>
+              </label>
+            </li>
+          </ul>
+          <div class="modal__btn">
+            <button class="button" type="submit">Отправить</button>
+          </div>
+        </form>
+        <button class="modal__button" data-modal-close>
+          <svg class="modal__close">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- mobile-menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg class="mobile-toggle__icon">
@@ -616,7 +616,7 @@
             </a>
           </li>
           <li class="mobile-menu-contacts__item">
-            <a class="mobile-menu-contacts__link" href="mailto:info@devstudio.com">
+            <a class="mobile-menu-contacts__link mobile-menu-contacts__link--mail" href="mailto:info@devstudio.com">
               info@devstudio.com
             </a>
           </li>

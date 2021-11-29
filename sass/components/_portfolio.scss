@@ -1,16 +1,22 @@
 .filters {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
-}
 
-.filters__item {
-  &:not(:last-child) {
-    margin-right: 8px;
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 }
 
+.filters__item {
+  margin-right: 8px;
+  margin-bottom: 15px;
+}
+
 .filters__button {
+  min-width: 73px;
+  height: 38px;
   border: tan;
   font-weight: 500;
   font-size: 16px;
@@ -19,7 +25,6 @@
   letter-spacing: 0.03em;
   background-color: $secondary-button-color-background;
   padding: 6px 22px;
-  min-width: 73px;
   border-radius: 4px;
   transition: color $animation-timing $timing-function,
     background-color $animation-timing $timing-function,
@@ -39,13 +44,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: -15px;
 }
 
 .grid__item {
-  width: 370px;
+  margin: 15px;
+  flex-basis: calc((100% - 2 * 15px) / 1);
 
-  &:nth-child(-n + 6) {
-    margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 6 * 15px) / 3);
   }
 }
 
@@ -69,6 +80,18 @@
   overflow: hidden;
 }
 
+.product__img {
+  width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}
+
 .product__overlay {
   position: absolute;
   bottom: 0;
@@ -80,7 +103,7 @@
   letter-spacing: 0.03em;
   color: $title-color;
   background: rgba(33, 150, 243, 0.9);
-  transform: translateY(294px);
+  transform: translateY(375px);
   transition: transform $animation-timing $timing-function;
 
   .product:hover &,
