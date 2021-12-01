@@ -19,6 +19,7 @@
 .menu-toggle {
   position: absolute;
   right: 15px;
+  top: 10px;
   padding: 12px 8px;
   width: 40px;
   height: 40px;
@@ -49,12 +50,11 @@
 }
 
 .mobile-menu__list {
-  margin: -16px;
-  margin-bottom: 200px;
+  margin-bottom: 302px;
 }
 
-.mobile-menu__item {
-  margin: 16px;
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .mobile-menu__link {
@@ -75,7 +75,7 @@
 }
 
 .mobile-menu-contacts {
-  margin: -16px;
+  margin-bottom: 64px;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
@@ -83,8 +83,8 @@
   color: $accent-color;
 }
 
-.mobile-menu-contacts__item {
-  margin: 16px;
+.mobile-menu-contacts__item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .mobile-menu-contacts__link--mail {
@@ -98,15 +98,19 @@
 .mobile-menu-social {
   display: flex;
   width: 100%;
-  margin-top: 64px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $accent-color;
+
+  @media screen and (max-width: 400px) {
+    font-size: 15px;
+  }
 }
 
 .mobile-menu-social__item {
-  padding: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
