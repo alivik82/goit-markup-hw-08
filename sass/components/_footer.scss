@@ -25,12 +25,11 @@
 
 .footer-contacts {
   display: block;
-  margin: 60px auto;
-  width: 231px;
+  // margin-bottom: 60px;
 
-  @media screen and (min-width: 768px) {
-    margin-right: 70px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   margin-right: 70px;
+  // }
 }
 
 .footer-contacts__item {
@@ -62,7 +61,9 @@
 }
 
 .social {
-  margin: 60px auto;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 }
 
 .social__title {
