@@ -1299,6 +1299,12 @@ textarea {
   display: block;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    margin-right: 70px;
+  }
+}
+
 .footer-contacts__item {
   font-size: 14px;
   line-height: 1.71;
@@ -1384,13 +1390,13 @@ textarea {
 .footer-form {
   display: flex;
   align-items: center;
-  margin: 60px auto;
   width: 100%;
 }
 
 @media screen and (max-width: 1199px) {
   .footer-form {
     flex-direction: column;
+    margin: 60px auto;
   }
 }
 

@@ -25,11 +25,10 @@
 
 .footer-contacts {
   display: block;
-  // margin-bottom: 60px;
 
-  // @media screen and (min-width: 1200px) {
-  //   margin-right: 70px;
-  // }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .footer-contacts__item {
@@ -115,11 +114,11 @@
 .footer-form {
   display: flex;
   align-items: center;
-  margin: 60px auto;
   width: 100%;
 
   @media screen and (max-width: 1199px) {
     flex-direction: column;
+    margin: 60px auto;
   }
 
   @media screen and (min-width: 1200px) {
